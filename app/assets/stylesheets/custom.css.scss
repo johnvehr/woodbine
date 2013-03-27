@@ -1,0 +1,234 @@
+@import "bootstrap";
+/*universal css for woodbine products company*/
+/* colors */
+$blue:#1ba4ff;
+
+/* custom fonts */
+@font-face {
+  font-family:casper;
+  src: url('/assets/Casper.ttf');
+}
+@font-face {
+  font-family:Nexa-bold;
+  src: url('/assets/Nexa Bold.otf');
+}
+@font-face {
+  font-family:cassa;
+  src: url('/assets/Cassannet.otf');
+}
+
+
+header {
+  position:fixed;
+  width:100%;
+  height:105px;
+  padding-top:4px;
+  z-index:999;
+  background-color:#fff;
+}
+
+.logo {
+  float:left;
+  img {
+  float:left;
+  margin-right:10px;
+  }
+  width:655px;
+  height:100%;
+  h3, h4 {
+  display:inline;
+  font-family:Nexa-bold;
+  }
+  h3 {
+  color:$blue;
+  }
+  h4 {
+  color:gray;
+  font-family:cassa;
+  span{
+  font-size:20px;
+  }
+  }
+}
+
+.logo-titles {
+  padding-top:28px;
+}
+
+.header-info{
+  float:right;
+  padding-top:15px;
+  h6{
+  display:inline;
+  color:rgba(107,107,107,1);
+  font-family:cassa;
+  }
+}
+
+.header-container {
+  margin: 0 auto;
+  width:900px;
+  height:100%;
+}
+/* nav */
+
+.navbar-inner-container {
+  margin:0 auto;
+  width:900px;
+}
+
+.navbar-inner {
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(27,164,255,1)), to(rgba(44,179,255,1)));
+  background-image: -webkit-linear-gradient(top, rgba(27,164,255,1), rgba(0,102,255,1));
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, rgba(27,164,255,1), rgba(44,179,255,1));
+}
+
+.navbar .nav > li > a{
+  color:#fff;
+  text-decoration:none;
+  text-shadow:none;
+  &:hover {
+  color:white;
+  }
+}
+
+/* home page */
+
+.main-container {
+  margin: 0 auto;
+  width:900px;
+  height:435px;
+  padding-top:150px;
+}
+
+.flexslider-container{
+  margin:0 auto;
+  width:670px;
+  height:400px;
+  margin-top:55px;
+}
+
+.container-two {
+  width:100%;
+  height:465px;
+  background-color:#4590ff;
+}
+
+.container-two-inside{
+  margin:0 auto;
+  width:900px;
+  padding-top:50px;
+  h1 {
+  text-align:center;
+  font-size:45px;
+  font-weight:bold;
+  color:rgba(255,255,255,0.6);
+  }
+  p {
+  color:#fff;
+  letter-spacing:1px;
+  margin-bottom:60px;
+  }
+}
+
+.contact-button-container{
+  width:169px;
+  margin:0 auto;
+}
+.contact-us {
+  margin-top:40px;
+  background-color:#65c31f;
+  font-family:sans-serif;
+  font-size:20px;
+  font-weight:normal;
+  text-shadow:0 1px 3px rgba(0,0,0,0.5);
+  padding:12px 26px;
+  text-align:center;
+  color:white;
+  border-radius:4px;
+  background-image: -webkit-linear-gradient(#94d52d,#65c31f);
+  background-image: -o-linear-gradient(#94d52d,#65c31f);
+  background-image: -ms-linear-gradient(#94d52d,#65c31f);
+
+  border-color:#57af17;
+}.contact-us:hover {
+  text-decoration:none;
+  color:white;
+
+}
+
+
+
+
+
+
+ hr.style-three {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 
+    background-image:      -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+    margin-bottom:45px;
+}
+
+/* contact */
+
+.contact-container {
+  margin:0 auto;
+  width:900px;
+  height:100%;
+}
+
+/* footer */
+footer {
+  width:100%;
+  height:300px;
+}
+
+.footer-container {
+  margin:0 auto;
+  width:900px;
+  height:100%;
+}
+.footer-left{
+  float:left;
+  width:50%;
+}
+.footer-right{
+  float:right;
+  padding-top:20px;
+  width:242px;
+  ul li {
+  list-style:none;
+  float:left;
+  margin-left:10px;
+  }
+}
+#one, #two, #three {
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  background-color:gray;
+  display:inline;
+  &:hover {
+  cursor:pointer;
+  }
+}
+#one-blue, #two-blue, #three-blue {
+  background-color:blue;
+}
+
+
+.footer-right-inside {
+  float:right;
+  width:240px;
+  height:160px;
+  border:1px solid rgba(0,0,0,0.28);
+  border-radius:10px;
+}
+
+

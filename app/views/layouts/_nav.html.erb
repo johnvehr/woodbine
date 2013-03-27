@@ -1,0 +1,22 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-inner-container">
+      <ul class="nav">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Who We Are', about_path %></li>
+        <li><%= link_to 'MSDS', msds_path %></li>
+        <li class="dropdown">
+          <a id="drop1" data-toggle="dropdown" data-target="#" role="button" class="dropdown-toggle">Products<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+            <li><%= link_to 'General', general_path %></li>
+            <li><%= link_to 'Soaps', soap_path %></li>
+          </ul>
+        </li>
+        <li><%= link_to 'Private Label', private_label_path %></li>
+        <li><%= link_to 'Resources', resources_path %></li>
+        <li><%= link_to 'Get In Touch', contact_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
