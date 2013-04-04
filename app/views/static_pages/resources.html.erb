@@ -1,2 +1,74 @@
-<h1>StaticPages#resources</h1>
-<p>Find me in app/views/static_pages/resources.html.erb</p>
+<div class="resource-header-padding">
+  <div class="resource-header">
+    <div class="resource-overlay">
+      <div class="resource-nav">
+        <h2><span>Woodbine</span> Resources</h2>
+        <ul>
+          <li>Literature<span>/</span></li>
+          <li>Meida<span>/</span></li>
+          <li>Prevent<span></span></li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="resource-container">
+  <h1>Literature</h1>
+  <hr class="style-two">
+  <div class="literature-section">
+    <ul>
+        <li><h4>FoamFresh Alco-Foam Instant Skin Sanitizer</h4>
+          <span><%= link_to "Download PDF", '/Alco-Foam-4740.pdf/', target: "_blank" %></span>
+        </li>
+        <li><h4>FoamFresh Alco-Free Instant Skin Sanitizer</h4>
+          <span><%= link_to "Download PDF", '/Alco-Foam-4750.pdf/', target: "_blank" %></span>
+        </li>
+        <li><h4>FoamFresh Antibacterial Hand Wash</h4>
+          <span><%= link_to "Download PDF", '/Alco-Foam-4760.pdf/', target: "_blank" %></span>
+        </li>
+        <li><h4>E2 FoamFresh Sanitizer Cleanser</h4>
+          <span><%= link_to "Download PDF", '/E2-4760.pdf/', target: "_blank" %></span>
+        </li>
+      </ul>
+    </div>
+    <div class="media-container">
+      <h1>Media</h1>
+      <hr class="style-two">
+      <div class="media-inner-container">
+        <div class="flexslider" style="width:620px;height:380px">
+         <ul class="slides">
+          <li><iframe width="620" height="380" src="http://www.youtube.com/embed/XHISh559oho" frameborder="0" allowfullscreen></iframe></li>
+          <li><iframe width="620" height="380" src="http://www.youtube.com/embed/zCVu_1d9AJ8" frameborder="0" allowfullscreen></iframe></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="prevent-container">
+    <h1>Prevent</h1>
+    <hr class="style-two">
+    <div class="prevent-center">
+      <div class="prevent-left">
+        <h2>Everyone</h2>
+      <ul>
+        <li>Sneeze and cough in to sleave/elbow, or cover your nose with a tissue.  And dont use a tissue twice, throw that sucker away the after first use</li>
+        <li>Wash your hands often, everytime you cough, sneeze or visit the bathroom, wash your hands</li>
+        <li>Avoid touching your face, especially your eyes nose and mouth</li>
+        <li>Keep updated with important websites like<a href="http://www.cdc.gov" target="_blank"> CDC</a></li>
+      </ul>
+    </div>
+    <div class="prevent-right">
+      <h2>Especially Kids</h2>
+      <ul>
+        <li>Before eating</li>
+        <li>after using the bathroom(15sec with soap 15 sec rinse)</li>
+        <li>after touching or feeding any animals</li>
+        <li>after blowing nose</li>
+        <li>after playing outside anytime</li>
+        <li>after throwing away or touching garbage</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <%= render 'layouts/script' %>
