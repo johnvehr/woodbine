@@ -288,6 +288,32 @@ header {
   }
 }
 
+/* private label */
+
+.private-container {
+  height:700px;
+  width:100%;
+  padding-top:50px;
+}
+
+.private-container h1 {
+  color:#535353;
+}
+
+.private-image-container {
+  width:800px;
+}
+
+
+.private-image-container img{
+  float:right;
+  margin-top:-125px;
+}
+
+.private-image-container h2 {
+  color: #535353;
+}
+
 /* resources */
 
 .resource-header-padding {
