@@ -112,7 +112,7 @@ header {
 
 .container-two {
   width:100%;
-  height:500px;
+  height:545px;
   background-color:#4590ff;
 }
 
@@ -127,6 +127,7 @@ header {
   color:rgba(255,255,255,0.6);
   }
   p {
+  font-size:17px;
   color:#fff;
   letter-spacing:1px;
   margin-bottom:60px;
@@ -322,36 +323,124 @@ header {
 
 /* private label */
 
-.private-container {
-  height:700px;
+.private-padding {
+  padding-top:149px;
+}
+
+.private-animate {
   width:100%;
-  padding-top:50px;
+  padding-top:40px;
 }
 
-.private-container h1 {
-  color:#535353;
+.private-container {
+  background:url('/assets/private-background.png') center no-repeat;
+  height:1000px;
+  width:100%;
 }
 
-.private-image-container {
-  width:800px;
+.private-container-overlay {
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
 }
 
+.private-container-inner {
+  margin:0 auto;
+  width:900px;
+  padding-top:10px;
+  text-align:center;
+  p {
+    color:#fff;
+    font-size:16px;
+    width:765px;
+    margin:0 auto;
+    letter-spacing:2px;
+  }
+}
 
-.private-image-container img{
+.private-container-inner h1 {
+  color:#fff;
+  font-size:30px;
+  text-transform:uppercase;
+  font-weight:lighter;
+  line-height:63px;
+  letter-spacing:3px;
+  span {
+  font-size:18px;
+  color:rgba(255,255,255,0.7);
+  }
+}
+
+.private-container-left {
+  float:left;
+  width:225px;
+  padding-top:42px;
+}
+
+.private-container-left ul {
+  float:left;
+}
+
+.private-container-left ul li {
+  display:inline-block;
+  list-style:none;
+  margin-bottom:135px;
+  padding:14px 27px 14px 29px;
+  background:#fff;
+  letter-spacing:1px;
+  color:#222;
+  text-transform:uppercase;
+  text-align:center;
+  white-space:nowrap;
+  border-radius:50px;
+  &:hover {
+  cursor:pointer;
+  }
+}
+
+.private-container-middle {
+  float:left;
+  width:470px;
+  padding-top:57px;  
+}
+
+.private-container-middle ul {
+  float:left;
+}
+
+.private-container-middle ul li {
+  display:none;
+  list-style:none;
+  margin-bottom:110px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  line-height:33px;
+  text-align:center;
+}
+
+.private-container-middle ul li span {
+  margin-left:40px;
+}
+
+.private-container-right {
+ float:right;
+ width:200px;
+}
+
+.private-container-right ul {
   float:right;
-  margin-top:-125px;
+}
+.private-container-right ul li {
+  list-style:none;
+  display:none;
+  margin-bottom:33px;
 }
 
-.private-image-container h2 {
-  color: #535353;
-}
-
-#step-one {
-display:none;
-}
-
-.step-one {
-  display:inline;
+.private-container-right ul li:last-child {
+  margin-top:90px;
 }
 
 /* resources */
