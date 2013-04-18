@@ -177,6 +177,38 @@ header {
   margin-right:40px;
 }
 
+.woodbine-home-logos {
+  width:100%;
+  height:190px;
+  background:#fff;
+  border-bottom:1px solid black;
+  text-align:center;
+}
+
+.woodbine-home-logos h2 {
+  color:gray;
+  font-weight:lighter;
+  text-transform:uppercase;
+}
+
+.logo-list {
+  margin: 0 auto;
+  width:800px;
+  height:40px;
+}
+
+.logo-list ul {
+  float:left;
+}
+
+.logo-list ul li {
+  list-style:none;
+  float:right;
+  margin-right:49px;
+}
+
+
+
 /* about page */
 .about-container {
   padding-top:65px;
@@ -312,6 +344,14 @@ header {
 
 .private-image-container h2 {
   color: #535353;
+}
+
+#step-one {
+display:none;
+}
+
+.step-one {
+  display:inline;
 }
 
 /* resources */
@@ -519,6 +559,14 @@ hr.style-three {
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+/* Double-color dashed line */
+		
+hr.style-four {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
 }
 
 .discover-more {
