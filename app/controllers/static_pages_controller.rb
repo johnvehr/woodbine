@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
   def sanitizers
   end
 
-  def heave_duty
+  def heavy_duty
   end
 
   def dispensers
@@ -34,4 +34,6 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+
 end
