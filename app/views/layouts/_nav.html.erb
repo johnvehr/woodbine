@@ -8,15 +8,20 @@
         <li class="dropdown">
           <a id="drop1" data-toggle="dropdown" data-target="#" role="button" class="dropdown-toggle">Products<b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-            <li><%= link_to 'Heavy Duty', heavy_duty_path %></li>
-            <li><%= link_to 'Comin Soon', '#' %></li>
-            <li><%= link_to 'Comin Soon', '#' %></li>
-            <li><%= link_to 'Comin Soon', '#' %></li>
+            <li><%= link_to 'FoamFresh', '#' %></li>
+            <li><%= link_to 'Sanitizers', '#' %></li>
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Industrial</a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Water-Activated", "#" %></li>
+                <li><%= link_to "Waterless", "#" %></li>
+              </ul>
+            </li>
             <li class="divider"></li>
             <li class="dropdown-submenu">
               <a tabindex="-1" href="#">Dispensers</a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Dispenser 1", "#" %></li>
+                <li><%= link_to "Disp", "#" %></li>
                 <li><%= link_to "Cooler Dispenser 2", "#" %></li>
               </ul>
             </li> 
@@ -26,6 +31,9 @@
         <li><%= link_to 'Resources', resources_path %></li>
         <li><%= link_to 'Get In Touch', contact_path %></li>
       </ul>
+      <div class="order">
+        <%= link_to 'Place New Order', contact_path, class: 'btn btn-success' %>
+      </div>
     </div>
   </div>
 </div>
