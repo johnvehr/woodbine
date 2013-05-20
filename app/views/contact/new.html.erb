@@ -1,0 +1,62 @@
+<div class="contact-container">
+  <div class="contact-detail">
+    <div class="contact-detail-header">
+      <p>Woodbine Products</p> 
+    </div>
+     <address>
+        915 West Smith Rd<br>
+        Medina, OH 44256<br>
+      </address>
+      <span class="phone"> 800-824-8179</span>
+      <h4>Need an order form or credit app?</h4>
+      <%= link_to "Download Order Form", '/Woodbine-Order-Form.xlsx/' %><br>
+      <%= link_to "Download Credit App", '/Credit-Application.doc/' %>
+  </div>
+  <div class="contact-inquire">
+    <div class="contact-inquire-header">
+      <p>General Inquires and Order Entry</p>
+    </div>
+    <div class="contact-inquire-container">
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="form-horizontal">
+    <div class="control-group">
+      <%= form.label :name, class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :name, placeholder: 'Company or personal name' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label :email, class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :email, placeholder: 'Please provide an email' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label :subject, class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_field :subject, placeholder: 'In Regards to' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= form.label :body, class: 'control-label' %>
+      <div class="controls">
+        <%= form.text_area :body, rows: 5, col: 40, placeholder: 'Fill us in' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= form.file_field :file, placeholder: 'Attatch Order or Credit Form' %>
+    </div>
+    <div class="contact-button">
+      <%= form.submit "Send", class: 'btn btn-success' %>
+    </div>
+  </fieldset>
+<% end %>
+</div>
+</div>
+<div class="contact-map">
+  <iframe width="900" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=915+West+Smith+Rd+Medina,+OH+44256&amp;ie=UTF8&amp;hq=&amp;hnear=915+W+Smith+Rd,+Medina,+Ohio+44256&amp;t=m&amp;ll=41.136908,-81.892004&amp;spn=0.022625,0.060081&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=+&amp;q=915+West+Smith+Rd+Medina,+OH+44256&amp;ie=UTF8&amp;hq=&amp;hnear=915+W+Smith+Rd,+Medina,+Ohio+44256&amp;t=m&amp;ll=41.136908,-81.892004&amp;spn=0.022625,0.060081&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
+</div>

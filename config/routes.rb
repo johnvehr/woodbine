@@ -14,8 +14,9 @@ Woodbine::Application.routes.draw do
   match "/soap",           to: "static_pages#soap"
   match "/private_label",  to: "static_pages#private_label"
   match "/resources",      to: "static_pages#resources"
-  match "/contact",        to: "static_pages#contact"
 
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

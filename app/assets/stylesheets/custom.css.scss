@@ -70,6 +70,11 @@ header {
   width:900px;
   height:100%;
 }
+
+.phone:before {
+  content: "\2706";
+}
+
 /* nav */
 
 .navbar-inner-container {
@@ -251,18 +256,77 @@ header {
 /* contact */
 
 .contact-container {
+  padding-top:170px;
   margin:0 auto;
   width:900px;
-  height:680px;
-  padding-top:20px;
-  h2 {
-  margin-left:20px;
-  margin-bottom:-15px;
-  color:$blue;
-  }
-  hr {
-  margin-bottom:60px;
-  }
+  display:block;
+}
+
+.contact-button {
+  width:100px;
+  display:block;
+  padding-left:322px;
+}
+
+.contact-detail {
+  float:left;
+  padding-top:50px;
+  width:300px;
+}
+.contact-detail span {
+  color:gray;
+}
+
+.contact-detail-header {
+  height:28px;
+  padding-top:10px;
+  background-color:tomato;
+  text-align:center;
+  text-transform:uppercase;
+  color:#FFF;
+  border-radius:5px;
+}
+
+address {
+  padding-top:16px;
+  color:gray;
+  text-transform:uppercase;
+}
+
+label {
+  color:gray;
+}
+
+.contact-inquire {
+  width:384px;
+  float:right;
+  padding-top:50px;
+}
+
+.contact-inquire-container {
+  padding-right:100px;
+}
+
+.contact-inquire-header {
+  float:right;
+  width:305px;
+  height:28px;
+  background-color:tomato;
+  text-align:center;
+  padding-top:10px;
+  margin-bottom:20px;
+  border-radius:5px;
+}
+
+.contact-inquire-header p {
+  text-transform:uppercase;
+  color:white;
+}
+
+.contact-map {
+  width:900px;
+  height:400px;
+  display:inline-block;
 }
 
 /* msds */
