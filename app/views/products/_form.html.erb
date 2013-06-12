@@ -1,0 +1,261 @@
+<div class="form-container">
+<%= form_for(@product, :html => {:multipart => true}) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="get-info">
+    <div class="get-info-left">
+  <%= select :category, [['Industrial Heavy Duty'], ['who cares']] %>
+  <%= select_tag(:type, options_for_select([['Waterless'], ['water activated']]), prompt: 'select type') %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, rows: 5, cols: 240 %>
+  </div>
+</div>
+<div class="get-info-right">
+  <div class="add-product-picture">
+  <div class="field">
+    <%= f.file_field :image %>
+  </div>
+</div>
+</div>
+  <table class="table table-bordered">
+    <thead>
+      <tr class="info">
+        <th>Stock#</th>
+        <th>Description</th>
+        <th>Case</th>
+        <th>Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= f.text_field :stocka, placeholder: 'Stock#A' %></td>
+        <td><%= f.text_field :desca,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casea,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighta,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody> 
+    <tbody class="newrow">
+      <tr>
+        <td><%= f.text_field :stockb, placeholder: 'Stock#B' %></td>
+        <td><%= f.text_field :descb,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseb,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightb,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow2">
+      <tr>
+        <td><%= f.text_field :stockc, placeholder: 'Stock#C' %></td>
+        <td><%= f.text_field :descc,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casec,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightc,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow3">
+      <tr>
+        <td><%= f.text_field :stockd, placeholder: 'Stock#D' %></td>
+        <td><%= f.text_field :descd,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :cased,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightd,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow4">
+      <tr>
+        <td><%= f.text_field :stocke, placeholder: 'Stock#E' %></td>
+        <td><%= f.text_field :desce,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casee,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighte,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow5">
+      <tr>
+        <td><%= f.text_field :stockf, placeholder: 'Stock#F' %></td>
+        <td><%= f.text_field :descf,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casef,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightf,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow6">
+      <tr>
+        <td><%= f.text_field :stockg, placeholder: 'Stock#G' %></td>
+        <td><%= f.text_field :descg,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseg,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightg,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow7">
+      <tr>
+        <td><%= f.text_field :stockh, placeholder: 'Stock#H' %></td>
+        <td><%= f.text_field :desch,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseh,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighth,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow8">
+      <tr>
+        <td><%= f.text_field :stocki, placeholder: 'Stock#I' %></td>
+        <td><%= f.text_field :desci,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casei,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighti,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow9">
+      <tr>
+        <td><%= f.text_field :stockj, placeholder: 'Stock#J' %></td>
+        <td><%= f.text_field :descj,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casej,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightj,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow10">
+      <tr>
+        <td><%= f.text_field :stockk, placeholder: 'Stock#K' %></td>
+        <td><%= f.text_field :desck,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casek,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightk,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow11">
+      <tr>
+        <td><%= f.text_field :stockl, placeholder: 'Stock#L' %></td>
+        <td><%= f.text_field :descl,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casel,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightl,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow12">
+      <tr>
+        <td><%= f.text_field :stockm, placeholder: 'Stock#M' %></td>
+        <td><%= f.text_field :descm,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casem,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightm,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow13">
+      <tr>
+        <td><%= f.text_field :stockn, placeholder: 'Stock#N' %></td>
+        <td><%= f.text_field :descn,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casen,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightn,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow14">
+      <tr>
+        <td><%= f.text_field :stocko, placeholder: 'Stock#O' %></td>
+        <td><%= f.text_field :desco,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseo,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighto,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow15">
+      <tr>
+        <td><%= f.text_field :stockp, placeholder: 'Stock#P' %></td>
+        <td><%= f.text_field :descp,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casep,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightp,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow16">
+      <tr>
+        <td><%= f.text_field :stockq, placeholder: 'Stock#Q' %></td>
+        <td><%= f.text_field :descq,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseq,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightq,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow17">
+      <tr>
+        <td><%= f.text_field :stockr, placeholder: 'Stock#R' %></td>
+        <td><%= f.text_field :descr,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caser,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightr,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow18">
+      <tr>
+        <td><%= f.text_field :stocks, placeholder: 'Stock#S' %></td>
+        <td><%= f.text_field :descs,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :cases,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weights,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow19">
+      <tr>
+        <td><%= f.text_field :stockt, placeholder: 'Stock#T' %></td>
+        <td><%= f.text_field :desct,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caset,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightt,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow20">
+      <tr>
+        <td><%= f.text_field :stocku, placeholder: 'Stock#U' %></td>
+        <td><%= f.text_field :descu,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :caseu,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightu,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow21">
+      <tr>
+        <td><%= f.text_field :stockv, placeholder: 'Stock#V' %></td>
+        <td><%= f.text_field :descv,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casev,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightv,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow22">
+      <tr>
+        <td><%= f.text_field :stockw, placeholder: 'Stock#W' %></td>
+        <td><%= f.text_field :descw,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casew,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightw,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow23">
+      <tr>
+        <td><%= f.text_field :stockx, placeholder: 'Stock#X' %></td>
+        <td><%= f.text_field :descx,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casex,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightx,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow24">
+      <tr>
+        <td><%= f.text_field :stocky, placeholder: 'Stock#Y' %></td>
+        <td><%= f.text_field :descy,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casey,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weighty,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+    <tbody class="newrow25">
+      <tr>
+        <td><%= f.text_field :stockz, placeholder: 'Stock#Z' %></td>
+        <td><%= f.text_field :descz,  placeholder: 'Description' %></td>
+        <td><%= f.text_field :casez,  placeholder: 'Case PK' %></td>
+        <td><%= f.text_field :weightz,placeholder: 'Weight' %></td>
+      </tr>
+    </tbody>
+   </table>
+    <div class="btn btn-success add-more">
+    Add More
+  </div>
+  </div>
+  <div class="actions">
+    <%= f.submit class: "btn btn-info" %>
+  </div>
+<% end %>
+</div>
+</div>

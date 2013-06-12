@@ -32,4 +32,7 @@ class StaticPagesController < ApplicationController
   def resources
   end
 
+  def gplotion
+  end
+
 end

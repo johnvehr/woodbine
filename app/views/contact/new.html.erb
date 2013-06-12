@@ -17,7 +17,7 @@
       <p>General Inquires and Order Entry</p>
     </div>
     <div class="contact-inquire-container">
-<%= form_for @message, :url => contact_path do |form| %>
+<%= form_for @message, multipart: true, :url => contact_path do |form| %>
   <fieldset class="form-horizontal">
     <div class="control-group">
       <%= form.label :name, class: 'control-label' %>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="control-group">
-      <%= form.file_field :file, placeholder: 'Attatch Order or Credit Form' %>
+      <%= form.file_field(:attachment) %>
     </div>
     <div class="contact-button">
       <%= form.submit "Send", class: 'btn btn-success' %>

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div class="product-show">
+<%= image_tag @product.image_url.to_s %>
+<p>
+  <b>Name:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @product.description %>
+</p>
+
+<table class="table table-bordered">
+  <thead class="info">
+    <tr>
+      <th>Stock#</th>
+      <th>Description</th>
+      <th>Case</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @product.stocka %></td>
+      <td><%= @product.desca %></td>
+      <td><%= @product.casea %></td>
+      <td><%= @product.weighta %></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

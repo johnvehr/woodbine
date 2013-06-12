@@ -1,5 +1,9 @@
 Woodbine::Application.routes.draw do
   
+  resources :items
+
+
+  resources :products
 
 
   root :to => 'static_pages#home'
@@ -14,6 +18,8 @@ Woodbine::Application.routes.draw do
   match "/soap",           to: "static_pages#soap"
   match "/private_label",  to: "static_pages#private_label"
   match "/resources",      to: "static_pages#resources"
+
+  match '/gplotion',       to: "static_pages#gplotion"
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

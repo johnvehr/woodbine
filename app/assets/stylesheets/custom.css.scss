@@ -659,6 +659,14 @@ label {
   float:right;
 }
 
+/* products */
+
+.product-container {
+  margin:0 auto;
+  padding-top:140px;
+  width:900px;
+}
+
 /* footer */
 footer {
   position:fixed;
@@ -791,7 +799,52 @@ hr.style-four {
 
 
 /* universal */
-
 .info {
   background: #69c3ff;
+}
+
+/* products */
+
+.form-container {
+  margin:0 auto;
+  padding-top:140px;
+  width:900px;
+}
+
+.add-product-picture {
+  padding:20px;
+  background-color:lightgray;
+  float:right;
+}
+
+.newrow, .newrow2, .newrow3, .newrow4, .newrow5, .newrow6, .newrow7, .newrow8,
+.newrow9, .newrow10, .newrow11, .newrow12, .newrow13, .newrow14, .newrow15, .newrow16, .newrow17, .newrow18, .newrow19, .newrow20, .newrow21, .newrow22, .newrow23, .newrow24, .newrow25{
+  display:none;
+}
+
+
+.add-more {
+  text-align:center;
+  display:inline-block;
+}
+
+.add-more:hover {
+  cursor:pointer;
+}
+
+.get-info-left {
+  float:left;
+  width:470px;
+}
+.get-info-right {
+  float:right;
+  width:300px;
+}
+
+/* product show */
+
+.product-show {
+  margin:0 auto;
+  width:900px;
+  padding-top:140px;
 }
