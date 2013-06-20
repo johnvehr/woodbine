@@ -1,4 +1,3 @@
-<div class="form-container">
 <%= form_for(@product, :html => {:multipart => true}) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -13,22 +12,29 @@
   <% end %>
   <div class="get-info">
     <div class="get-info-left">
-  <%= select :category, [['Industrial Heavy Duty'], ['who cares']] %>
-  <%= select_tag(:type, options_for_select([['Waterless'], ['water activated']]), prompt: 'select type') %>
+  <%= f.select :category, options_for_select([["Industrial Heavy Duty"], ["General Purpose Liquid Hand Soap"], ["Foam Soaps"], ["Sanitizers"]]), prompt: "Select Category", id: "simple-example" %>
+  <%= f.select :cat_type, grouped_options_for_select(@product.option_type), prompt: 'Select Type'%>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, size:60, placeholder: "Please enter the product name" %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description, rows: 5, cols: 240 %>
+    <%= f.text_area :description, rows: 5, cols: 240, placeholder: "Product main description" %>
   </div>
 </div>
 <div class="get-info-right">
-  <div class="add-product-picture">
   <div class="field">
+    <%= f.label :Add_Product_Image %><br />
+    <div class="upload-stuff">
     <%= f.file_field :image %>
   </div>
+  </div>
+<div class="field">
+  <%= f.label :Add_MSDS_PDF_FORMAT %><br />
+  <div class="upload-stuff">
+  <%= f.file_field :doc %>
+</div>
 </div>
 </div>
   <table class="table table-bordered">
@@ -249,13 +255,13 @@
       </tr>
     </tbody>
    </table>
-    <div class="btn btn-success add-more">
+    <div class="btn btn-info add-more">
     Add More
   </div>
   </div>
   <div class="actions">
-    <%= f.submit class: "btn btn-info" %>
+    <%= f.submit class: "btn btn-success" %>
+    <%= link_to 'Cancel', products_path, class: 'btn btn-danger' %>
   </div>
 <% end %>
-</div>
 </div>

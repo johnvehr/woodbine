@@ -19,6 +19,7 @@ $bluelightt:#1ba4ff;
 }
 
 header {
+  display:none;
   position:fixed;
   width:100%;
   height:105px;
@@ -33,7 +34,7 @@ header {
   float:left;
   margin-right:10px;
   }
-  width:655px;
+  width:670px;
   height:100%;
   h3, h4 {
   display:inline;
@@ -805,14 +806,18 @@ hr.style-four {
 
 /* products */
 
-.form-container {
+.new-product {
   margin:0 auto;
-  padding-top:140px;
   width:900px;
+  padding-top:160px;
+}
+
+.new-product p {
+  margin-bottom:20px;
 }
 
 .add-product-picture {
-  padding:20px;
+  padding:60px 12px 58px 80px;
   background-color:lightgray;
   float:right;
 }
@@ -826,6 +831,7 @@ hr.style-four {
 .add-more {
   text-align:center;
   display:inline-block;
+  margin-bottom:20px;
 }
 
 .add-more:hover {
@@ -841,6 +847,27 @@ hr.style-four {
   width:300px;
 }
 
+.field {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.field label {
+  margin-bottom:-18px;
+}
+.field input[type="text"] {
+  width:430px;
+}
+.field textarea {
+  width:430px;
+}
+
+.upload-stuff {
+  background:#69c3ff;
+  border-radius:5px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
 /* product show */
 
 .product-show {
@@ -848,3 +875,20 @@ hr.style-four {
   width:900px;
   padding-top:140px;
 }
+
+
+/* coming soon page temp */
+
+.coming-soon {
+  width:100%;
+  height:1000px;
+  background:#FAFAFA;
+}
+
+.coming-soon-inner {
+  margin:0 auto;
+  padding-top:50px;
+  width:400px;
+  text-align:center;
+}
+
