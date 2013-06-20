@@ -19,7 +19,6 @@ $bluelightt:#1ba4ff;
 }
 
 header {
-  display:none;
   position:fixed;
   width:100%;
   height:105px;
@@ -212,7 +211,7 @@ header {
 }
 
 .logo-list ul {
-  float:left;
+  margin-right:70px;
 }
 
 .logo-list ul li {

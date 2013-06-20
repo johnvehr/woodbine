@@ -6,7 +6,7 @@ Woodbine::Application.routes.draw do
   resources :products
 
 
-  root :to => 'static_pages#soon'
+  root :to => 'static_pages#home'
   
   match "/about",          to: "static_pages#about"
   match "/msds",           to: "static_pages#msds"
