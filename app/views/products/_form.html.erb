@@ -20,7 +20,7 @@
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description, rows: 5, cols: 240, placeholder: "Product main description" %>
+    <%= f.text_area :description, rows: 8, cols: 240, placeholder: "Product main description" %>
   </div>
 </div>
 <div class="get-info-right">
@@ -35,6 +35,16 @@
   <div class="upload-stuff">
   <%= f.file_field :doc %>
 </div>
+</div>
+<div class="field">
+  <%= f.label :Add_atching_dispenser_image %><br/>
+  <div class="upload-stuff">
+    <%= f.file_field :disp_image %>
+  </div>
+</div>
+<div class="field">
+  <%= f.label :Dispenser_name %><br/>
+  <%= f.text_field :disp_name , style: "width:290px;"%>
 </div>
 </div>
   <table class="table table-bordered">
@@ -255,13 +265,13 @@
       </tr>
     </tbody>
    </table>
-    <div class="btn btn-info add-more">
+    <div class="btn add-more">
     Add More
   </div>
   </div>
   <div class="actions">
     <%= f.submit class: "btn btn-success" %>
-    <%= link_to 'Cancel', products_path, class: 'btn btn-danger' %>
+    <%= link_to 'Cancel', login_path, class: 'btn btn-danger' %>
   </div>
 <% end %>
 </div>

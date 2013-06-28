@@ -1,0 +1,29 @@
+<div class="admin-login">
+  <div class="choose-product">
+    <div class="page-header">
+    <h4>Please choose which product you would like to work with</h4>
+  </div>
+    <div class="choose-product-container">
+    <div class="btn-group">
+      <button class="btn btn-large">Soap</button>
+      <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><%= link_to 'Add a new Soap Product', new_product_path %></li>
+        <li><%= link_to 'View all current Soap Products', products_path %></li>
+      </ul>
+    </div>
+    <div class="btn-group second-group">
+      <button class="btn btn-large">Dispenser</button>
+      <button class="btn btn-large dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><%= link_to 'Add a new dispenser', new_dispenser_path %></li>
+        <li><%= link_to 'View all current dispensers', dispensers_path %></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>

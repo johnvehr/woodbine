@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="product-show">
+<%= image_tag @dispenser.image_url.to_s, class: 'product-image' %>
+<div class="product-show-info">
+  <h2><%= @dispenser.name %></h2>
+  <p>
+    <%= @dispenser.description %>
+  </p>
+</div>
+<table class="table table-bordered">
+  <thead class="info">
+    <th>Stock#</th>
+    <th>Case</th>
+    <th>Weight</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @dispenser.stock %></td>
+      <td><%= @dispenser.case %></td>
+      <td><%= @dispenser.weight %></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<%= link_to 'Edit', edit_dispenser_path(@dispenser) %> |
+<%= link_to 'Back', dispensers_path %>

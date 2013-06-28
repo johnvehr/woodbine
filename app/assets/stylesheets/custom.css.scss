@@ -667,6 +667,53 @@ label {
   width:900px;
 }
 
+.product-image {
+  float:right;
+  padding-top:10px;
+  width:200px;
+  height:300px;
+}
+
+/* product search results */
+
+.product-results {
+  padding-top:200px;
+  margin:0 auto;
+  width:900px;
+  height:900px;
+}
+
+.product-select {
+  display:inline-block;
+  margin-bottom:15px;
+  width:100%;
+  height:130px;
+  background:#FAFAFA;
+  -webkit-transition:all 0.2s linear;
+  a {
+  margin-top:50px;
+  margin-right:15px;
+  float:right;
+  }
+}
+
+.product-select:hover {
+  background:rgba(44,179,255,0.24);
+}
+
+.product-select-info {
+  display:inline-block;
+  padding-left:20px;
+  width:450px;
+}
+
+
+.results-image {
+  float:left;
+  width:110px;
+  height:130px;
+}
+
 /* footer */
 footer {
   position:fixed;
@@ -687,23 +734,13 @@ footer {
   color:#fff;
   color:rgba(80,80,80,1);
 }
-.footer-left{
-  float:left;
-  width:50%;
-}
-.footer-right{
+
+.footer-container a {
   float:right;
-  width:242px;
-  ul li {
-  list-style:none;
-  float:left;
-  margin-top:10px;
-  }
-  h3 {
-  margin-left:64px;
-  margin-bottom:-2px;
-  }
+  position:relative;
+  bottom:38px;
 }
+
 #one, #two, #three, #four {
   height:20px;
   width:20px;
@@ -716,15 +753,6 @@ footer {
   }
 }
 
-.footer-right-inside {
-  float:right;
-  width:150px;
-  height:150px;
-  padding:15px;
-  background-color:#fff;
-  border:1px solid rgba(0,0,0,0.28);
-  border-radius:10px;
-}
 
 /* universal styles and bs */
 
@@ -875,6 +903,9 @@ hr.style-four {
   padding-top:140px;
 }
 
+.product-show-info {
+  padding-top:40px;
+}
 
 /* coming soon page temp */
 
@@ -890,4 +921,36 @@ hr.style-four {
   width:400px;
   text-align:center;
 }
+
+
+/* login page */
+
+.admin-login {
+  width:100%;
+  height:900px;
+  background:#FAFAFA;
+}
+
+.choose-product {
+  margin:0 auto;
+  padding-top:200px;
+  width:900px;
+}
+
+.choose-product h4 {
+  margin-bottom:20px;
+}
+
+.choose-product-container {
+  width:300px;
+  height:100px;
+}
+
+.second-group {
+  float:right;
+  position:relative;
+  bottom:38px;
+}
+
+
 

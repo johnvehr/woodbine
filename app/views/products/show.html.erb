@@ -1,17 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <div class="product-show">
-<%= image_tag @product.image_url.to_s %>
-<p>
-  <b>Name:</b>
-  <%= @product.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
+<%= image_tag @product.disp_image_url.to_s, class: 'product-image' %>
+<%= image_tag @product.image_url.to_s, class: 'product-image' %>
+<div class="product-show-info">
+  <h2><%= @product.name %></h2>
+  <p>
+    <%= @product.description %>
+  </p>
+</div>
+<%= link_to 'View Product MSDS', @product.doc.url, class: 'btn btn-info', target: "_blank" %>
 <table class="table table-bordered">
   <thead class="info">
     <tr>
@@ -28,9 +26,33 @@
       <td><%= @product.casea %></td>
       <td><%= @product.weighta %></td>
     </tr>
+    <tr>
+      <td><%= @product.stockb %></td>
+      <td><%= @product.descb %></td>
+      <td><%= @product.caseb %></td>
+      <td><%= @product.weightb %></td>
+    </tr>
+    <tr>
+      <td><%= @product.stockc %></td>
+      <td><%= @product.descc %></td>
+      <td><%= @product.casec %></td>
+      <td><%= @product.weightc %></td>
+    </tr>
+    <tr>
+      <td><%= @product.stockd %></td>
+      <td><%= @product.descd %></td>
+      <td><%= @product.cased %></td>
+      <td><%= @product.weightd %></td>
+    </tr>
+    <tr>
+      <td><%= @product.stocke %></td>
+      <td><%= @product.desce %></td>
+      <td><%= @product.casee %></td>
+      <td><%= @product.weighte %></td>
+    </tr>
   </tbody>
 </table>
-
+<%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-warning' %>
 </div>
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+

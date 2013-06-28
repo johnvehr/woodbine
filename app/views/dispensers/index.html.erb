@@ -1,0 +1,24 @@
+<div class="product-results">
+  <div class="page-header">
+  <h5>All current dispensers | Admin</h5>
+</div>
+  <% @dispensers.each do |dispenser| %>
+     <div class="product-select">
+    <%= image_tag dispenser.image_url.to_s, class: "results-image" %>
+    <div class="product-select-info">
+    <h4><%= dispenser.name %></h4>
+    <p><%= dispenser.description %></p>
+  </div>
+  <%= link_to 'Select', dispenser, class: 'btn btn-success' %>
+  <%= link_to 'Edit', edit_dispenser_path(dispenser), class: 'btn' %> 
+  <%= link_to 'Destroy', dispenser, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+</div>
+<% end %>
+<%= will_paginate %>
+</div>
+
+
+
+
+
+

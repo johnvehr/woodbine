@@ -1,0 +1,22 @@
+<div class="product-results">
+  <div class="page-header">
+  <h5>Dispensers | by Woodbine</h5>
+</div>
+  <% @dispensers.each do |dispenser| %>
+     <div class="product-select">
+    <%= image_tag dispenser.image_url.to_s, class: "results-image" %>
+    <div class="product-select-info">
+    <h4><%= dispenser.name %></h4>
+    <p><%= dispenser.description %></p>
+  </div>
+  <%= link_to 'Select', dispenser, class: 'btn btn-success' %>
+</div>
+<% end %>
+<%= will_paginate @dispensers %>
+</div>
+
+
+
+
+
+

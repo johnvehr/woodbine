@@ -1,13 +1,28 @@
 Woodbine::Application.routes.draw do
   
+  resources :dispensers
+
+
   resources :items
 
 
   resources :products
 
-
+  #add css for the page and the route path in the link
   root :to => 'static_pages#home'
-  
+  #search results routes
+  match "/soap_dispensers",      to: "static_pages#soap_dispensers"
+  match "/industrial",           to: "static_pages#industrial"
+  match "/industrial_water",     to: "static_pages#industrial_water"
+  match "/liquid_lotion_soap",   to: "static_pages#liquid_lotion_soap"
+  match "/liquid_antibacterial_soap", to: "static_pages#liquid_antibacterial_soap"
+  match "/foam_soap",            to: "static_pages#foam_soap"
+  match "/foam_soap_antibacterial",   to: "static_pages#foam_soap_antibacterial"
+  match "/general_sanitizers",   to: "static_pages#general_sanitizers"
+  match "/sanitizer_hand_cleaner",    to: "static_pages#sanitizer_hand_cleaner"
+
+
+  match "/login",          to: "static_pages#login" 
   match "/about",          to: "static_pages#about"
   match "/msds",           to: "static_pages#msds"
   match "/general",        to: "static_pages#general"

@@ -1,6 +1,6 @@
 <div class="product-results">
   <div class="page-header">
-  <h5>All current soap products | Admin</h5>
+  <h5>Sanitizers | Hand Cleaner Soaps by Woodbine</h5>
 </div>
   <% @products.each do |product| %>
      <div class="product-select">
@@ -10,11 +10,9 @@
     <p><%= product.description %></p>
   </div>
   <%= link_to 'Select', product, class: 'btn btn-success' %>
-  <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-warning' %> 
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
 </div>
 <% end %>
-<%= will_paginate %>
+<%= will_paginate @products %>
 </div>
 
 
