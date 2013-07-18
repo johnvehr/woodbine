@@ -26,5 +26,5 @@
   </div>
   <% @products.each do |product| %>
   <%= product.name %><br>
-  <%= link_to 'View Product MSDS', @product.doc.url, class: 'btn btn-info', target: "_blank" %>
+  <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-info', target: "_blank" %>
   <% end %>
