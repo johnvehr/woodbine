@@ -28,18 +28,21 @@
     <%= f.label :Add_Product_Image %><br />
     <div class="upload-stuff">
     <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %>
   </div>
   </div>
 <div class="field">
   <%= f.label :Add_MSDS_PDF_FORMAT %><br />
   <div class="upload-stuff">
   <%= f.file_field :doc %>
+  <%= f.hidden_field :doc_cache %>
 </div>
 </div>
 <div class="field">
   <%= f.label :Add_atching_dispenser_image %><br/>
   <div class="upload-stuff">
     <%= f.file_field :disp_image %>
+    <%= f.hidden_field :disp_image_cache %>
   </div>
 </div>
 <div class="field">

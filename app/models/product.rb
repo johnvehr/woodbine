@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :category, :cat_type, :name, :doc, :description, :image, :disp_image, :disp_name, 
+  attr_accessible :image_cache, :doc_cache, :disp_image_cache,:category, :cat_type, :name, :doc, :description, :image, :disp_image, :disp_name, 
                   :stocka, :desca, :casea, :weighta,
                   :stockb, :descb, :caseb, :weightb,
                   :stockc, :descc, :casec, :weightc,
