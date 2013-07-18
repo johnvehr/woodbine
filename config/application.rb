@@ -16,8 +16,8 @@ module Woodbine
   :address              => "smtp.gmail.com",
   :port                 => 587,
   :domain               => "yourdomain.dev",
-  :user_name            => "woodbineinfo@gmail.com",
-  :password             => "woodbinepassword",
+  :user_name            => "customerservice@woodbineproducts.com",
+  :password             => "",
   :authentication       => :plain,
   :enable_starttls_auto => true
   }

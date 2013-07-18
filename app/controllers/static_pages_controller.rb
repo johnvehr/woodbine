@@ -34,6 +34,7 @@ class StaticPagesController < ApplicationController
       format.json { render json: @products }
     end
   end
+  
 
    def foam_soap
      @products = Product.where(:cat_type => "General Purpose").paginate(:page => params[:page], per_page: 5)
@@ -76,6 +77,14 @@ class StaticPagesController < ApplicationController
     end
   end
 
+  def msds
+    @products = Product.paginate(:page => params[:page], per_page: 5)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
 
   def soon
   end
@@ -84,9 +93,6 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-  end
-
-  def msds
   end
 
   def general
