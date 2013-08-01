@@ -1,8 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <div class="product-show">
-<%= image_tag @product.disp_image_url.to_s, class: 'product-image' %>
+<% if @product.disp_image %>
+  <%= image_tag @product.disp_image_url.to_s, class: 'product-image' %>
+<% else %>
+  <h1>NO</h1>
+<% end %>
+<% if @product.image %>
 <%= image_tag @product.image_url.to_s, class: 'product-image' %>
+<% else %>
+  <h1>no again</h1>
+<% end %>
 <div class="product-show-info">
   <h2><%= @product.name %></h2>
   <p>
