@@ -8,7 +8,11 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'jquery-rails', '2.0.2'
 gem 'carrierwave'
+gem 'carrierwave_direct'
+gem 'sidekiq'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'fog'
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
