@@ -18,7 +18,7 @@ CarrierWave.configure do |config|
     :provider               => 'AWS',                             # required
     :aws_access_key_id      => 'AWSAccessKeyId=AKIAJA72XTRWJSDYO3GQ',            # required
     :aws_secret_access_key  => 'AWSSecretKey=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',     # required
-    :region                 => 'us-east-1'                        # optional, defaults to 'us-east-1'
+    :region                 => 'us-west-2'                        # optional, defaults to 'us-east-1'
   }
   config.cache_dir = "#{Rails.root}/tmp/uploads"
   config.fog_directory  = 'woodbine'               # required
