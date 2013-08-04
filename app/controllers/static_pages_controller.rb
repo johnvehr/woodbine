@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 
-  http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial]
+  http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial,:industrial, :industrial_water,:liquid_lotion_soap, :liquid_antibacterial_soap, :foam_soap, :foam_soap_antibacterial, :general_sanitizers, :sanitizer_hand_cleaner, :soap_dispensers ]
 
   def industrial
     @products = Product.where(:cat_type => "Waterless")
@@ -78,7 +78,7 @@ class StaticPagesController < ApplicationController
   end
 
   def msds
-    @products = Product.paginate(:page => params[:page], per_page: 10)
+    @products = Product.paginate(:page => params[:page], per_page: 8)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
