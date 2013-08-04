@@ -369,14 +369,17 @@ label {
 }
 
 .the-list {
-  padding-top:200px;
+  padding-top:10px;
   margin:0 auto;
   width:900px;
+  h4 {
+  font-weight:lighter;
+  }
+}
+.the-list a {
+  margin-bottom:15px;
 }
 
-.product-msds-space {
-  margin-bottom:20px;
-}
 
 .msds-hack {
   margin:0 auto;

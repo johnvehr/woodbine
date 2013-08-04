@@ -10,8 +10,8 @@
   </div>
   <div class="the-list">
   <% @products.each do |product| %>
-    <div class="product-msds-space"
-  <%= product.name %><br>
+    <div class="page-header">
+    <h4><%= product.name %><br></h4>
   <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-info', target: "_blank" %>
 </div>
   <% end %>
