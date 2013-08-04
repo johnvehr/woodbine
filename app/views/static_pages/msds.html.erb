@@ -1,30 +1,16 @@
 <div class="msds-padding">
 <div class="msds-section-one">
       <div class="msds-overlay">
-        <div class="msds-hack">
-        <div class="msds-left">
+        <div class="msds-one-container">
           <h1><span>M.S.D.S</span> Database</h1><br>
           <p>Search for material satey data sheets to all our products</p>
         </div>
-        <div class="msds-right">
-          <span>Scroll or skip to</span><div class="btn-group">
-            <button class="btn btn-danger">Product Category</button>
-            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#HeavyDuty">Heavy Duty</a></li>
-              <li><a href="#Sanitize">Sanitizer</a></li>
-              <li><a href="#FoamFresh">Foam Fresh</a></li>
-              <li><a href="#GeneralPurpose">General Purpose</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
+  <div class="the-list">
   <% @products.each do |product| %>
   <%= product.name %><br>
   <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-info', target: "_blank" %>
   <% end %>
+</div>
