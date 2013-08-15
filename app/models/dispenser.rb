@@ -13,4 +13,12 @@ class Dispenser < ActiveRecord::Base
     }
   end
 
+  def dispenser_description 
+    @description = description
+    if @description.length > 140
+      @description[(0..140)] + "..."
+    else 
+      @description
+    end
+  end
 end
