@@ -2,18 +2,7 @@
   <div class="page-header">
   <h5>Foam Soap | Antibacterial by Woodbine</h5>
 </div>
-  <% @products.each do |product| %>
-     <div class="product-select">
-    <%= image_tag product.image_url.to_s, class: "results-image" %>
-    <div class="product-select-info">
-    <h4><%= product.name %></h4>
-    <p><%= product.description %></p>
-  </div>
-  <%= link_to 'Select', product, class: 'btn btn-success' %>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
-</div>
-<% end %>
-<%= will_paginate @products %>
+<%= render 'display' %> 
 </div>
 
 
