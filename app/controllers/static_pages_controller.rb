@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 
-  http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial,:industrial, :industrial_water,:liquid_lotion_soap, :liquid_antibacterial_soap, :foam_soap, :foam_soap_antibacterial, :general_sanitizers, :sanitizer_hand_cleaner, :soap_dispensers ]
+  http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial,:industrial, :industrial_water,:liquid_lotion_soap, :liquid_antibacterial_soap, :foam_soap, :foam_soap_antibacterial, :general_sanitizers, :sanitizer_hand_cleaner, :soap_dispensers, :private_label, :resources]
 
   def industrial
     @products = Product.where(:cat_type => "Waterless")
