@@ -2,17 +2,7 @@
   <div class="page-header">
   <h5>Liquid Soap | Antibacterial by Woodbine</h5>
 </div>
-  <% @products.each do |product| %>
-     <div class="product-select">
-    <%= image_tag product.image_url.to_s, class: "results-image" %>
-    <div class="product-select-info">
-    <h4><%= product.name %></h4>
-    <p><%= product.description %></p>
-  </div>
-  <%= link_to 'Select', product, class: 'btn btn-success' %>
-</div>
-<% end %>
-<%= will_paginate @products %>
+  <%= render 'display' %>
 </div>
 
 

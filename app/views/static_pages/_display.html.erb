@@ -6,7 +6,6 @@
     <p><%= product.product_description %></p>
   </div>
   <%= link_to 'Select', product, class: 'btn btn-success' %>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
 </div>
 <% end %>
 <%= will_paginate @products %>
