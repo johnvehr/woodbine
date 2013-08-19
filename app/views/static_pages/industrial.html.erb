@@ -1,17 +1,8 @@
 <div class="product-results">
- <div class="product-select">
-<% @products.each do |product| %>
-    <%= image_tag product.image_url.to_s, class: "results-image" %>
-    <div class="product-select-info">
-    <h4><%= product.name %></h4>
-    <p><%= product.description %></p>
+  <div class="page-header">
+    <h5>Industrial Heavy Duty | Waterless Soaps by Woodbine</h5>
   </div>
-    <%= link_to 'Show', product, class: 'btn btn-info' %>
-<% end %>
-</div>
-<br />
-
-<%= link_to 'New Product', new_product_path %>
+  <%= render 'display' %>
 </div>
 
 
