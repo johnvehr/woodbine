@@ -2,7 +2,7 @@ class DispensersController < ApplicationController
   # GET /dispensers
   # GET /dispensers.json
   def index
-    @dispensers = Dispenser.paginate(:page => params[:page], per_page: 8)
+    @dispensers = Dispenser.paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @dispensers }
