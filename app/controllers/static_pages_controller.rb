@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial,:industrial, :industrial_water,:liquid_lotion_soap, :liquid_antibacterial_soap, :foam_soap, :foam_soap_antibacterial, :general_sanitizers, :sanitizer_hand_cleaner, :soap_dispensers, :private_label, :resources]
 
   def industrial
-    @products = Product.where(:cat_type => "Waterless").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Waterless").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -20,7 +20,7 @@ class StaticPagesController < ApplicationController
 
 
   def liquid_lotion_soap
-    @products = Product.where(:cat_type => "Lotion Soap").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Lotion Soap").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -28,7 +28,7 @@ class StaticPagesController < ApplicationController
   end
 
   def liquid_antibacterial_soap 
-    @products = Product.where(:cat_type => "Antibacterial Soap").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Antibacterial Soap").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -37,7 +37,7 @@ class StaticPagesController < ApplicationController
   
 
    def foam_soap
-     @products = Product.where(:cat_type => "General Purpose").paginate(:page => params[:page], per_page: 5)
+     @products = Product.where(:cat_type => "General Purpose").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -45,7 +45,7 @@ class StaticPagesController < ApplicationController
   end
 
   def foam_soap_antibacterial
-    @products = Product.where(:cat_type => "Antibacterial").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Antibacterial").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -53,7 +53,7 @@ class StaticPagesController < ApplicationController
   end
 
   def general_sanitizers
-    @products = Product.where(:cat_type => "General Sanitizers").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "General Sanitizers").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -61,7 +61,7 @@ class StaticPagesController < ApplicationController
   end
 
   def sanitizer_hand_cleaner 
-    @products = Product.where(:cat_type => "Hand Cleaner/Sanitizer").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Hand Cleaner/Sanitizer").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -71,7 +71,7 @@ class StaticPagesController < ApplicationController
 
   def soap_dispensers 
     
-    @dispensers = Dispenser.paginate(:page => params[:page], per_page: 5)
+    @dispensers = Dispenser.order("stock asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @dispensers }
