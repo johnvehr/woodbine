@@ -79,7 +79,7 @@ class StaticPagesController < ApplicationController
   end
 
   def msds
-    @products = Product.paginate(:page => params[:page], per_page: 8)
+    @products = Product.order("stocka asc").paginate(:page => params[:page], per_page: 8)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
