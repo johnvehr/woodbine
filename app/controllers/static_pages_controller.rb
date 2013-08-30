@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   end
 
   def industrial_water
-    @products = Product.where(:cat_type => "Water-Activated").paginate(:page => params[:page], per_page: 5).sort{|a,b| b.stocka.to_i <=> a.stocka.to_i}
+    @products = Product.where(:cat_type => "Water-Activated").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
