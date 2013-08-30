@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:soon, :home, :about, :msds, :general, :antibacterial,:industrial, :industrial_water,:liquid_lotion_soap, :liquid_antibacterial_soap, :foam_soap, :foam_soap_antibacterial, :general_sanitizers, :sanitizer_hand_cleaner, :soap_dispensers, :private_label, :resources]
 
   def industrial
-    @products = Product.where(:cat_type => "Waterless").order("stocka asc").paginate(:page => params[:page], per_page: 5)
+    @products = Product.where(:cat_type => "Waterless")
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   end
 
   def industrial_water
-    @products = Product.where(:cat_type => "Water-Activated").paginate(:page => params[:page], per_page: 5).sort{ |a,b| a.stocka.to_i <=> b.stocka.to_i }
+    @products = Product.where(:cat_type => "Water-Activated").order("stocka asc").paginate(:page => params[:page], per_page: 5)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
