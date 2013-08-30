@@ -8,7 +8,7 @@
       </div>
     </div>
   </div>
-  <div class="the-list">
+    <div class="the-list">
   <% @products.each do |product| %>
     <div class="page-header">
     <h4><%= product.name %><br></h4>
@@ -17,3 +17,4 @@
   <% end %>
   <%= will_paginate @products %>
 </div>
+

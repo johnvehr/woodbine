@@ -12,8 +12,8 @@
   <% end %>
   <div class="get-info">
     <div class="get-info-left">
-  <%= f.select :category, options_for_select([["Industrial Heavy Duty"], ["General Purpose Liquid Hand Soap"], ["Foam Soaps"], ["Sanitizers"]]), prompt: "Select Category", id: "simple-example" %>
-  <%= f.select :cat_type, grouped_options_for_select(@product.option_type), prompt: 'Select Type'%>
+  <%= f.select :category, options_for_select([["Industrial Heavy Duty", 1], ['General Purpose Liquid Hand Soap', 2], ["Foam Soaps",3], ["Sanitizers",4]]), prompt: "Select Category", id: "simple-example" %>
+  <%= f.select :cat_type, grouped_options_for_select(@product.option_type, selected_key: @product.option_type), prompt: 'Select Type'%>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name, size:60, placeholder: "Please enter the product name" %>
