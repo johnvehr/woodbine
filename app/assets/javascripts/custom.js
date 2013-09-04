@@ -19,7 +19,6 @@ $(document).ready(function(){
     $('.three').fadeIn('slow');
     $('html, body').animate({scrollTop:1000},'50');
   })
-
   //products
    var count = 0;
    $('.add-more').click(function() {

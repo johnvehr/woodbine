@@ -431,7 +431,18 @@ label {
   margin-bottom:25px;
   }
 }
-
+.acc-container {
+  margin:0 auto;
+  width:800px;
+  padding-top:40px;
+}.accordion-heading:hover {
+  background:rgba(226,226,226,1);
+  color:blue;
+}.accordion-toggle{
+}.accordion-toggle:hover {
+  text-decoration:none;
+  color:#2cb3ff;
+}
 /* private label */
 
 .private-padding {

@@ -11,6 +11,7 @@ end
 
 module Woodbine
   class Application < Rails::Application
+    config.assets.initialize_on_precompile = false
 
     config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
