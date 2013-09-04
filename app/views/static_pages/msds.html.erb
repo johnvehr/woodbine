@@ -8,13 +8,24 @@
       </div>
     </div>
   </div>
-    <div class="the-list">
+  <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Heavy Duty</a>
+      </div>
+      <div class="collapseOne" class="accordion-body collapse in">
+        <div class="accordion-inner">
+          whatevs
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="the-list">
   <% @products.each do |product| %>
-    <div class="page-header">
     <h4><%= product.name %><br></h4>
   <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-info', target: "_blank" %>
-</div>
   <% end %>
-  <%= will_paginate @products %>
 </div>
 

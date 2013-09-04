@@ -73,6 +73,8 @@ new.jpg: new-8d14d4cd05b44abea4a8bc86c30d3baa.jpg
 new/index.jpg: new-8d14d4cd05b44abea4a8bc86c30d3baa.jpg
 plant.jpg: plant-e9dadb71339d4cb488d9230e2d311549.jpg
 plant/index.jpg: plant-e9dadb71339d4cb488d9230e2d311549.jpg
+priv.jpg: priv-247319e7b65fda4342bb9ca4fc6335de.jpg
+priv/index.jpg: priv-247319e7b65fda4342bb9ca4fc6335de.jpg
 private-background-2.png: private-background-2-12ac8668976a35f1a4214b3906feddc3.png
 private-background-2/index.png: private-background-2-12ac8668976a35f1a4214b3906feddc3.png
 private-background.png: private-background-ede56975fc015d5dd902c68dbe5909f3.png
@@ -153,8 +155,8 @@ Nexa Bold.otf: Nexa Bold-9e9d17c97f9f67edba67708702a81f81.otf
 Nexa Bold/index.otf: Nexa Bold-9e9d17c97f9f67edba67708702a81f81.otf
 Nexa Light.otf: Nexa Light-5d5c2f10317f31c9ff2fe7adacd6a4c5.otf
 Nexa Light/index.otf: Nexa Light-5d5c2f10317f31c9ff2fe7adacd6a4c5.otf
-application.css: application-e91db03432323d1daccbee368c8072a6.css
-application/index.css: application-e91db03432323d1daccbee368c8072a6.css
+application.css: application-4d10f301138f746fdfadf9dfe66745ac.css
+application/index.css: application-4d10f301138f746fdfadf9dfe66745ac.css
 code.otf: code-445352452a875aa3041e3b5601f02ae7.otf
 code/index.otf: code-445352452a875aa3041e3b5601f02ae7.otf
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
