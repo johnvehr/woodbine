@@ -1,0 +1,14 @@
+[2013-08-17 17:55:46,774][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: initializing ...
+[2013-08-17 17:55:46,779][INFO ][plugins                  ] [Vibraxas] loaded [], sites []
+[2013-08-17 17:55:49,088][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: initialized
+[2013-08-17 17:55:49,088][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: starting ...
+[2013-08-17 17:55:49,223][INFO ][transport                ] [Vibraxas] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.0.5:9300]}
+[2013-08-17 17:55:52,382][INFO ][cluster.service          ] [Vibraxas] new_master [Vibraxas][teFxohomRJG5N7ggjeQXKA][inet[/192.168.0.5:9300]], reason: zen-disco-join (elected_as_master)
+[2013-08-17 17:55:52,528][INFO ][discovery                ] [Vibraxas] elasticsearch/teFxohomRJG5N7ggjeQXKA
+[2013-08-17 17:55:52,540][INFO ][http                     ] [Vibraxas] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.0.5:9200]}
+[2013-08-17 17:55:52,541][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: started
+[2013-08-17 17:55:52,585][INFO ][gateway                  ] [Vibraxas] recovered [0] indices into cluster_state
+[2013-08-17 18:22:31,806][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: stopping ...
+[2013-08-17 18:22:31,862][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: stopped
+[2013-08-17 18:22:31,862][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: closing ...
+[2013-08-17 18:22:31,871][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: closed

@@ -1,14 +1,28 @@
-[2013-08-17 17:55:46,774][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: initializing ...
-[2013-08-17 17:55:46,779][INFO ][plugins                  ] [Vibraxas] loaded [], sites []
-[2013-08-17 17:55:49,088][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: initialized
-[2013-08-17 17:55:49,088][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: starting ...
-[2013-08-17 17:55:49,223][INFO ][transport                ] [Vibraxas] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.0.5:9300]}
-[2013-08-17 17:55:52,382][INFO ][cluster.service          ] [Vibraxas] new_master [Vibraxas][teFxohomRJG5N7ggjeQXKA][inet[/192.168.0.5:9300]], reason: zen-disco-join (elected_as_master)
-[2013-08-17 17:55:52,528][INFO ][discovery                ] [Vibraxas] elasticsearch/teFxohomRJG5N7ggjeQXKA
-[2013-08-17 17:55:52,540][INFO ][http                     ] [Vibraxas] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.0.5:9200]}
-[2013-08-17 17:55:52,541][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: started
-[2013-08-17 17:55:52,585][INFO ][gateway                  ] [Vibraxas] recovered [0] indices into cluster_state
-[2013-08-17 18:22:31,806][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: stopping ...
-[2013-08-17 18:22:31,862][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: stopped
-[2013-08-17 18:22:31,862][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: closing ...
-[2013-08-17 18:22:31,871][INFO ][node                     ] [Vibraxas] {0.20.6}[27735]: closed
+[2013-09-06 10:48:12,435][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: initializing ...
+[2013-09-06 10:48:12,441][INFO ][plugins                  ] [Flag-Smasher] loaded [], sites []
+[2013-09-06 10:48:14,854][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: initialized
+[2013-09-06 10:48:14,854][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: starting ...
+[2013-09-06 10:48:14,988][INFO ][transport                ] [Flag-Smasher] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.0.5:9300]}
+[2013-09-06 10:48:18,133][INFO ][cluster.service          ] [Flag-Smasher] new_master [Flag-Smasher][El1FRo3zRWe6eGFVYTelQw][inet[/192.168.0.5:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-06 10:48:18,204][INFO ][discovery                ] [Flag-Smasher] elasticsearch/El1FRo3zRWe6eGFVYTelQw
+[2013-09-06 10:48:18,219][INFO ][http                     ] [Flag-Smasher] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.0.5:9200]}
+[2013-09-06 10:48:18,219][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: started
+[2013-09-06 10:48:18,263][INFO ][gateway                  ] [Flag-Smasher] recovered [0] indices into cluster_state
+[2013-09-06 10:49:23,744][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: stopping ...
+[2013-09-06 10:49:23,789][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: stopped
+[2013-09-06 10:49:23,789][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: closing ...
+[2013-09-06 10:49:23,799][INFO ][node                     ] [Flag-Smasher] {0.20.6}[9015]: closed
+[2013-09-06 10:54:38,772][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: initializing ...
+[2013-09-06 10:54:38,778][INFO ][plugins                  ] [Cap 'N Hawk] loaded [], sites []
+[2013-09-06 10:54:40,681][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: initialized
+[2013-09-06 10:54:40,682][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: starting ...
+[2013-09-06 10:54:40,762][INFO ][transport                ] [Cap 'N Hawk] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.0.5:9300]}
+[2013-09-06 10:54:43,785][INFO ][cluster.service          ] [Cap 'N Hawk] new_master [Cap 'N Hawk][jQlxCptYTCaj6Eup3wHIbQ][inet[/192.168.0.5:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-06 10:54:43,822][INFO ][discovery                ] [Cap 'N Hawk] elasticsearch/jQlxCptYTCaj6Eup3wHIbQ
+[2013-09-06 10:54:43,835][INFO ][http                     ] [Cap 'N Hawk] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.0.5:9200]}
+[2013-09-06 10:54:43,835][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: started
+[2013-09-06 10:54:43,879][INFO ][gateway                  ] [Cap 'N Hawk] recovered [0] indices into cluster_state
+[2013-09-06 11:03:40,008][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: stopping ...
+[2013-09-06 11:03:40,041][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: stopped
+[2013-09-06 11:03:40,041][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: closing ...
+[2013-09-06 11:03:40,049][INFO ][node                     ] [Cap 'N Hawk] {0.20.6}[9158]: closed
