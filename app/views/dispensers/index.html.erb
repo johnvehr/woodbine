@@ -1,24 +1,33 @@
-<div class="product-results">
-  <div class="page-header">
-  <h5>All current dispensers | Admin</h5>
-</div>
-  <% @dispensers.each do |dispenser| %>
-     <div class="product-select">
-    <%= image_tag dispenser.image_url.to_s, class: "results-image" %>
-    <div class="product-select-info">
-    <h4><%= dispenser.name %></h4>
-    <p><%= dispenser.dispenser_description %></p>
-  </div>
-  <%= link_to 'Select', dispenser, class: 'btn btn-success' %>
-  <%= link_to 'Edit', edit_dispenser_path(dispenser), class: 'btn' %> 
-  <%= link_to 'Destroy', dispenser, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
-</div>
+<h1>Listing dispensers</h1>
+
+<table>
+  <tr>
+    <th>Stock</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Case</th>
+    <th>Weight</th>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dispensers.each do |dispenser| %>
+  <tr>
+    <td><%= dispenser.stock %></td>
+    <td><%= dispenser.name %></td>
+    <td><%= dispenser.description %></td>
+    <td><%= dispenser.case %></td>
+    <td><%= dispenser.weight %></td>
+    <td><%= dispenser.image %></td>
+    <td><%= link_to 'Show', dispenser %></td>
+    <td><%= link_to 'Edit', edit_dispenser_path(dispenser) %></td>
+    <td><%= link_to 'Destroy', dispenser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
 <% end %>
-<%= will_paginate %>
-</div>
+</table>
 
+<br />
 
-
-
-
-
+<%= link_to 'New Dispenser', new_dispenser_path %>

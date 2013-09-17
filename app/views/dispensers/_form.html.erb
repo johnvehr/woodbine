@@ -1,55 +1,17 @@
-<%= form_for(@dispenser) do |f| %>
-  <% if @dispenser.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@dispenser.errors.count, "error") %> prohibited this dispenser from being saved:</h2>
+<%= simple_form_for(@dispenser, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+  <div class="new-woodbine-dispenser">
+    <div class="dispenser-header">
+      <%= f.input :name, label: "Dispenser Name", class: "disp-name-input" %>
+      <%= f.input :stock, clas: "disp-stock-input" %>
+    </div>
+    <%= f.input :description %>
+    <%= f.input :case %>
+    <%= f.input :weight %>
+    <%= f.input :image %>
 
-      <ul>
-      <% @dispenser.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="get-info">
-    <div class="get-info-left">
-      <%= f.select :category, options_for_select([["Industrial Heavy Duty"], ["Liquid Hand Soap"], ["Foam Soaps"], ["Sanitizers"]]), prompt: "Select Category" %>
-      <%= f.select :cat_type, grouped_options_for_select(@dispenser.option_type), prompt: 'Select Type' %>
-      <div class="field">
-        <%= f.label :name %><br/>
-        <%= f.text_field :name, size:60, placeholder: "Enter dispenser name" %>
-      </div>
-      <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description, rows: 5, cols: 240, maxlength: 400, placeholder: "Dispenser description" %>
+  <div class="form-actions">
+    <%= f.button :submit %>
   </div>
-
-    </div>
-    <div class="get-info-right">
-      <div class="field">
-        <%= f.label :Add_Dispenser_Image %><br>
-        <div class="upload-stuff">
-          <%= f.file_field :image %>
-        </div>
-      </div>
-    </div>
-  </div>
-  <table class="table table-bordered">
-    <thead>
-      <tr class="info">
-        <th>Stock#</th>
-        <th>Weight</th>
-        <th>Case</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><%= f.text_field :stock, placeholder: 'Enter stock #' %></td>
-        <td><%= f.text_field :weight, placeholder: 'Enter weight' %></td>
-        <td><%= f.text_field :case, placeholder: 'Enter case amount' %></td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="actions">
-    <%= f.submit class: "btn btn-success"%>
-  </div>
+</div>
 <% end %>

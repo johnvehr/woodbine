@@ -1,12 +1,13 @@
 Woodbine::Application.routes.draw do
   
+
+
+
   resources :dispensers
 
 
-  resources :items
-
-
   resources :products
+
 
   #add css for the page and the route path in the link
   root :to => 'static_pages#home'

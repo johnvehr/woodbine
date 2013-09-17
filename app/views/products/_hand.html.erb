@@ -1,0 +1,4 @@
+<% @product_s.where(:category => "Hand Sanitizers").find_each do |product| %>
+  <li><%= link_to product.name, product %></li>
+<% end %>
+

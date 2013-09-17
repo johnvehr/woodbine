@@ -1,11 +1,9 @@
 class ProductsController < ApplicationController
-
-  http_basic_authenticate_with :name => "ohio", :password => "foamfresh", :except => [:index, :show]
-
   # GET /products
   # GET /products.json
   def index
-    @products = Product.paginate(:page => params[:page], per_page: 10)
+    @products = Product.all
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +15,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.find(params[:id])
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,11 +23,12 @@ class ProductsController < ApplicationController
     end
   end
 
+
   # GET /products/new
   # GET /products/new.json
   def new
     @product = Product.new
-
+    @product_s = Product.order("stocka asc")
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @product }
@@ -38,12 +38,14 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @product = Product.find(params[:id])
+    @product_s = Product.order("stocka asc")
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(params[:product])
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       if @product.save
@@ -60,7 +62,7 @@ class ProductsController < ApplicationController
   # PUT /products/1.json
   def update
     @product = Product.find(params[:id])
-
+    @product_s = Product.order("stocka asc")
     respond_to do |format|
       if @product.update_attributes(params[:product])
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
@@ -76,6 +78,7 @@ class ProductsController < ApplicationController
   # DELETE /products/1.json
   def destroy
     @product = Product.find(params[:id])
+    @product_s = Product.order("stocka asc")
     @product.destroy
 
     respond_to do |format|
@@ -83,4 +86,6 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-end
+  
+
+  end

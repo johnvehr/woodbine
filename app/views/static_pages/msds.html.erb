@@ -16,52 +16,18 @@
       </div>
       <div id="collapseOne" class="accordion-body collapse in">
         <div class="accordion-inner">
-          <% @products.where(:cat_type => "Water-Activated").find_each do |product| %>
+          <% @product_s.where(:category => "Water-Activated").find_each do |product| %>
             <h4><%= product.name %><br></h4>
             <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
           <% end %>
         </div>
       </div>
     </div>
-      <div class="accordion-group">  
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Industrial Waterless</a>
-      </div>
-      <div id="collapseTwo" class="accordion-body collapse in">
-        <div class="accordion-inner">
-          <% @products.where(:cat_type => "Waterless").find_each do |product| %>
-            <h4><%= product.name %><br></h4>
-            <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
-          <% end %>
+
         </div>
       </div>
     </div>
-    <div class="accordion-group">  
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Liquid Lotion Soaps</a>
-      </div>
-      <div id="collapseThree" class="accordion-body collapse in">
-        <div class="accordion-inner">
-          <% @products.where(:cat_type => "Lotion Soap").find_each do |product| %>
-            <h4><%= product.name %><br></h4>
-            <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-group">  
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Liquid Antibacterial Soap</a>
-      </div>
-      <div id="collapseFour" class="accordion-body collapse in">
-        <div class="accordion-inner">
-          <% @products.where(:cat_type => "Antibacterial Soap").find_each do |product| %>
-            <h4><%= product.name %><br></h4>
-            <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
+    
 </div>
 <script>
   $('.collapse').collapse();

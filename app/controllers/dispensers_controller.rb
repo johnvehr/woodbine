@@ -2,7 +2,9 @@ class DispensersController < ApplicationController
   # GET /dispensers
   # GET /dispensers.json
   def index
-    @dispensers = Dispenser.paginate(:page => params[:page], per_page: 5)
+    @dispensers = Dispenser.all
+    @product_s = Product.order("stocka asc")
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @dispensers }
@@ -13,6 +15,7 @@ class DispensersController < ApplicationController
   # GET /dispensers/1.json
   def show
     @dispenser = Dispenser.find(params[:id])
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,6 +27,7 @@ class DispensersController < ApplicationController
   # GET /dispensers/new.json
   def new
     @dispenser = Dispenser.new
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,11 +38,13 @@ class DispensersController < ApplicationController
   # GET /dispensers/1/edit
   def edit
     @dispenser = Dispenser.find(params[:id])
+    @product_s = Product.order("stocka asc")
   end
 
   # POST /dispensers
   # POST /dispensers.json
   def create
+    @product_s = Product.order("stocka asc")
     @dispenser = Dispenser.new(params[:dispenser])
 
     respond_to do |format|
@@ -56,6 +62,7 @@ class DispensersController < ApplicationController
   # PUT /dispensers/1.json
   def update
     @dispenser = Dispenser.find(params[:id])
+    @product_s = Product.order("stocka asc")
 
     respond_to do |format|
       if @dispenser.update_attributes(params[:dispenser])
@@ -71,6 +78,7 @@ class DispensersController < ApplicationController
   # DELETE /dispensers/1
   # DELETE /dispensers/1.json
   def destroy
+    @product_s = Product.order("stocka asc")
     @dispenser = Dispenser.find(params[:id])
     @dispenser.destroy
 

@@ -1,9 +1,11 @@
 class ContactController < ApplicationController
     def new
+    @product_s = Product.order("stocka asc")
     @message = Message.new
   end
 
   def create
+    @product_s = Product.order("stocka asc")
     @message = Message.new(params[:message])
     
     if @message.valid?

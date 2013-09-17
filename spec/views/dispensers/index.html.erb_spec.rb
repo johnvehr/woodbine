@@ -5,17 +5,19 @@ describe "dispensers/index" do
     assign(:dispensers, [
       stub_model(Dispenser,
         :stock => "Stock",
-        :weight => 1.5,
+        :name => "Name",
+        :description => "MyText",
         :case => 1,
-        :category => "Category",
-        :cat_type => "Cat Type"
+        :weight => 1.5,
+        :image => "Image"
       ),
       stub_model(Dispenser,
         :stock => "Stock",
-        :weight => 1.5,
+        :name => "Name",
+        :description => "MyText",
         :case => 1,
-        :category => "Category",
-        :cat_type => "Cat Type"
+        :weight => 1.5,
+        :image => "Image"
       )
     ])
   end
@@ -24,9 +26,10 @@ describe "dispensers/index" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Stock".to_s, :count => 2
-    assert_select "tr>td", :text => 1.5.to_s, :count => 2
+    assert_select "tr>td", :text => "Name".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText".to_s, :count => 2
     assert_select "tr>td", :text => 1.to_s, :count => 2
-    assert_select "tr>td", :text => "Category".to_s, :count => 2
-    assert_select "tr>td", :text => "Cat Type".to_s, :count => 2
+    assert_select "tr>td", :text => 1.5.to_s, :count => 2
+    assert_select "tr>td", :text => "Image".to_s, :count => 2
   end
 end

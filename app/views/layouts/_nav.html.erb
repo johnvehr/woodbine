@@ -10,36 +10,47 @@
           <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
             
             <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">Industrial Heavy Duty</a>
+              <a tabindex="-1" href="#">Lotion Hand Soaps</a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Water-Activated", industrial_water_path %></li>
-                <li><%= link_to "Waterless", industrial_path %></li>
-              </ul>
-            </li>
-
-            <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">Liquid Hand Soap</a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Lotion Soap", liquid_lotion_soap_path %></li>
-                <li><%= link_to "Antibacterial Soap", liquid_antibacterial_soap_path %></li>
+                <%= render 'products/lotion' %>
               </ul>
             </li>
 
             <li class="dropdown-submenu">
               <a tabindex="-1" href="#">Foam Soaps</a>
               <ul class="dropdown-menu">
-                <li><%= link_to "General Purpose", foam_soap_path %></li>
-                <li><%= link_to "Antibacterial", foam_soap_antibacterial_path %></li>
+                <%= render 'products/foam' %>
               </ul>
             </li>
 
             <li class="dropdown-submenu">
-              <a tabindex="-1" href="#">Sanitizers</a>
+              <a tabindex="-1" href="#">Hand Sanitizers</a>
               <ul class="dropdown-menu">
-                <li><%= link_to "General Sanitizers", general_sanitizers_path %></li>
-                <li><%= link_to "Hand Cleaner/Sanitizer", sanitizer_hand_cleaner_path %></li>
+                <%= render 'products/hand' %>
               </ul>
             </li>
+
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Industrial Waterless Hand Cleaner</a>
+              <ul class="dropdown-menu">
+                <%= render 'products/ind_waterless_hand' %>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Industrial Waterless Liquid Hand Cleaner</a>
+              <ul class="dropdown-menu">
+                <%= render 'products/ind_waterless_liquid' %> 
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a tabindex="-1" href="#">Industrial Water-Activated Hand Cleaner</a>
+              <ul class="dropdown-menu">
+                <%= render 'products/ind_water_activated' %>
+              </ul>
+            </li>
+
 
             <li class="divider"></li>
             <li><%= link_to "Dispensers", soap_dispensers_path %></li>             
@@ -52,4 +63,6 @@
     </div>
   </div>
 </div>
+
+
 

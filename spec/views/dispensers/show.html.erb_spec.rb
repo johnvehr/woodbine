@@ -4,10 +4,11 @@ describe "dispensers/show" do
   before(:each) do
     @dispenser = assign(:dispenser, stub_model(Dispenser,
       :stock => "Stock",
-      :weight => 1.5,
+      :name => "Name",
+      :description => "MyText",
       :case => 1,
-      :category => "Category",
-      :cat_type => "Cat Type"
+      :weight => 1.5,
+      :image => "Image"
     ))
   end
 
@@ -15,9 +16,10 @@ describe "dispensers/show" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Stock/)
-    rendered.should match(/1.5/)
+    rendered.should match(/Name/)
+    rendered.should match(/MyText/)
     rendered.should match(/1/)
-    rendered.should match(/Category/)
-    rendered.should match(/Cat Type/)
+    rendered.should match(/1.5/)
+    rendered.should match(/Image/)
   end
 end

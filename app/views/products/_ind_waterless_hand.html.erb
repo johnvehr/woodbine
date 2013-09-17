@@ -1,0 +1,4 @@
+<% @product_s.where(:category => "Industrial Waterless Hand Cleaner").find_each do |product| %>
+  <li><%= link_to product.name, product %></li>
+<% end %>
+
