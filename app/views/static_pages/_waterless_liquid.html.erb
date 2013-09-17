@@ -1,0 +1,17 @@
+<div class="acc-container">
+  <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Industrial Waterless Liquid Hand Cleaner</a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse in">
+        <div class="accordion-inner">
+          <% @product_s.where(:category => "Industrial Waterless Liquid Hand Cleaner").find_each do |product| %>
+            <h4><%= product.name %><br></h4>
+            <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

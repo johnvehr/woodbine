@@ -346,6 +346,7 @@ label {
   width:100%;
   height:150px;
   background:url('/assets/msds-wide.png')center no-repeat;
+  margin-bottom:15px;
 }
 
 .msds-overlay {
@@ -368,17 +369,8 @@ label {
   }
 }
 
-.the-list {
-  padding-top:10px;
-  margin:0 auto;
-  width:900px;
-  margin-bottom:100px;
-  h4 {
-  font-weight:lighter;
-  }
-}
-.the-list a {
-  margin-bottom:10px;
+.acc-container {
+  padding-top:0 !important;
 }
 
 

@@ -8,31 +8,16 @@
       </div>
     </div>
   </div>
-<div class="acc-container">
-  <div class="accordion" id="accordion2">
-    <div class="accordion-group">
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Industrial Water-Activated</a>
-      </div>
-      <div id="collapseOne" class="accordion-body collapse in">
-        <div class="accordion-inner">
-          <% @product_s.where(:category => "Water-Activated").find_each do |product| %>
-            <h4><%= product.name %><br></h4>
-            <%= link_to 'View Product MSDS', product.doc.url, class: 'btn btn-success', target: "_blank" %>
-          <% end %>
-        </div>
-      </div>
-    </div>
 
-        </div>
-      </div>
-    </div>
+<%= render 'lotion' %>
+<%= render 'hand' %>
+<%= render 'foam' %>
+<%= render 'water_activated' %>
+<%= render 'waterless_hand' %>
+<%= render 'waterless_liquid' %>
+
     
-</div>
 <script>
   $('.collapse').collapse();
 </script>
-  
-  <div class="the-list">  
-</div>
 
