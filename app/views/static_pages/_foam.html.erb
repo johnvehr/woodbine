@@ -2,9 +2,9 @@
   <div class="accordion" id="accordion2">
     <div class="accordion-group">
       <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Foam Soaps</a>
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Foam Soaps</a>
       </div>
-      <div id="collapseOne" class="accordion-body collapse in">
+      <div id="collapseThree" class="accordion-body collapse in">
         <div class="accordion-inner">
           <% @product_s.where(:category => "Foam Soaps").find_each do |product| %>
             <h4><%= product.name %><br></h4>
@@ -15,3 +15,5 @@
     </div>
   </div>
 </div>
+    
+

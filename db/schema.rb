@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130916191151) do
+ActiveRecord::Schema.define(:version => 20130917163028) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -67,44 +67,44 @@ ActiveRecord::Schema.define(:version => 20130916191151) do
     t.string   "desca"
     t.integer  "casea"
     t.float    "weighta"
-    t.integer  "disp_categorya"
     t.string   "stockb"
     t.string   "descb"
     t.integer  "caseb"
     t.float    "weightb"
-    t.integer  "disp_categoryb"
     t.string   "stockc"
     t.string   "descc"
     t.integer  "casec"
     t.float    "weightc"
-    t.integer  "disp_categoryc"
     t.string   "stockd"
     t.string   "descd"
     t.integer  "cased"
     t.float    "weightd"
-    t.integer  "disp_categoryd"
     t.string   "stocke"
     t.string   "desce"
     t.integer  "casee"
     t.float    "weighte"
-    t.integer  "disp_categorye"
     t.string   "stockf"
     t.string   "descf"
     t.integer  "casef"
     t.float    "weightf"
-    t.integer  "disp_categoryf"
     t.string   "stockg"
     t.string   "descg"
     t.integer  "caseg"
     t.float    "weightg"
-    t.integer  "disp_categoryg"
     t.string   "stockh"
     t.string   "desch"
     t.integer  "caseh"
     t.float    "weighth"
-    t.integer  "disp_categoryh"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "disp_categorya"
+    t.string   "disp_categoryb"
+    t.string   "disp_categoryc"
+    t.string   "disp_categoryd"
+    t.string   "disp_categorye"
+    t.string   "disp_categoryf"
+    t.string   "disp_categoryg"
+    t.string   "disp_categoryh"
   end
 
 end

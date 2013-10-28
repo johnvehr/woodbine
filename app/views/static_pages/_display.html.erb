@@ -1,11 +1,1 @@
-<% @products.each do |product| %>
-     <div class="product-select">
-    <%= image_tag product.image_url.to_s, class: "results-image" %>
-    <div class="product-select-info">
-    <h4><%= product.name %></h4>
-    <p><%= product.product_description %></p>
-  </div>
-  <%= link_to 'Select', product, class: 'btn btn-success' %>
-</div>
-<% end %>
-<%= will_paginate @products %>
+

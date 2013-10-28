@@ -696,6 +696,10 @@ label {
 
 /* products */
 
+table > tbody > tr > td >input {
+  width:150px;
+}
+
 .product-container {
   margin:0 auto;
   padding-top:140px;
@@ -862,6 +866,14 @@ hr.style-four {
   background: #69c3ff;
 }
 
+/* listing all products */
+
+.woodbine-product-list {
+  margin: 0 auto;
+  width:900px;
+  padding-top:160px;
+}
+
 /* new products */
 
 .new-woodbine-product {
@@ -927,9 +939,10 @@ hr.style-four {
   width:900px;
   height:700px;
 }.woodbine-show-product-left {
+  padding-top:20px;
   float:left;
-  width:300px;
-  height:200px;
+  width:310px;
+  height:221px;
   display:inline-table;
 }.woodbine-show-product-right {
   float:right;

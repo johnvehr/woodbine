@@ -4,6 +4,15 @@ class Product < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   mount_uploader :doc, DocUploader
 
+  def product_description 
+    @description = description
+    if @description.length > 140
+      @description[(0..140)] + "..."
+    else
+      @description
+    end
+  end
+
   def custom_name 
     "#{stocka}"
   end
