@@ -1,35 +1,21 @@
-<p id="notice"><%= notice %></p>
+<section class="woodbine-show-product">
+  <p id="notice"><%= notice %></p>
+  <div class="woodbine-show-product-left">
+    <%= image_tag @dispenser.image_url.to_s, class: "product-image" %>
+  </div>
+  <div class="woodbine-show-product-right">
+    <div class="product-bar">
+      <span class="brand"><%= @dispenser.name %></span>
+    </div>
+    <p><%= @dispenser.description %></p>
+    Stock:
+    <p><%= @dispenser.stock %></p>
+    Case:
+    <p><%= @dispenser.case  %></p>
+    Weight:
+    <p><%= @dispenser.weight %></p>
+  </div>
 
-<p>
-  <b>Stock:</b>
-  <%= @dispenser.stock %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @dispenser.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @dispenser.description %>
-</p>
-
-<p>
-  <b>Case:</b>
-  <%= @dispenser.case %>
-</p>
-
-<p>
-  <b>Weight:</b>
-  <%= @dispenser.weight %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= @dispenser.image %>
-</p>
+</section>
 
 
-<%= link_to 'Edit', edit_dispenser_path(@dispenser) %> |
-<%= link_to 'Back', dispensers_path %>

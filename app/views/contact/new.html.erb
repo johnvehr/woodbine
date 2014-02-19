@@ -1,17 +1,17 @@
 <div class="contact-container">
   <div class="contact-detail">
-    <div class="contact-detail-header">
+    <div class="contact-detail-header" style="background:white; color:gray;">
       <p>Woodbine Products</p> 
     </div>
      <address>
         915 West Smith Rd<br>
         Medina, OH 44256<br>
       </address>
-      <span class="phone"> 800-824-8179</span>
+      <span> 800-824-8179</span>
   </div>
   <div class="contact-inquire">
-    <div class="contact-inquire-header">
-      <p>General Inquiries</p>
+    <div class="contact-inquire-header" style="background:white">
+      <p style="color:gray;">General Inquiries</p>
     </div>
     <div class="contact-inquire-container">
 <%= form_for @message, multipart: true, :url => contact_path do |form| %>
@@ -19,28 +19,28 @@
     <div class="control-group">
       <%= form.label :name, class: 'control-label' %>
       <div class="controls">
-        <%= form.text_field :name, placeholder: 'Company or personal name' %>
+        <%= form.text_field :name %>
       </div>
     </div>
     
     <div class="control-group">
       <%= form.label :email, class: 'control-label' %>
       <div class="controls">
-        <%= form.text_field :email, placeholder: 'Please provide an email' %>
+        <%= form.text_field :email %>
       </div>
     </div>
     
     <div class="control-group">
       <%= form.label :subject, class: 'control-label' %>
       <div class="controls">
-        <%= form.text_field :subject, placeholder: 'In Regards to' %>
+        <%= form.text_field :subject %>
       </div>
     </div>
     
     <div class="control-group">
       <%= form.label :body, class: 'control-label' %>
       <div class="controls">
-        <%= form.text_area :body, rows: 5, col: 40, placeholder: 'Fill us in' %>
+        <%= form.text_area :body, rows: 5, col: 40 %>
       </div>
     </div>
     <div class="contact-button">

@@ -2,7 +2,7 @@ class DispensersController < ApplicationController
   # GET /dispensers
   # GET /dispensers.json
   def index
-    @dispensers = Dispenser.all
+    @dispensers = Dispenser.paginate(:page => params[:page], :per_page => 30)
     @product_s = Product.order("stocka asc")
 
     respond_to do |format|
@@ -44,7 +44,7 @@ class DispensersController < ApplicationController
   # POST /dispensers
   # POST /dispensers.json
   def create
-    @product_s = Product.order("stocka asc")
+    #@product_s = Product.order("stocka asc")
     @dispenser = Dispenser.new(params[:dispenser])
 
     respond_to do |format|

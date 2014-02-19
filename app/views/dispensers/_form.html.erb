@@ -1,17 +1,29 @@
-<%= simple_form_for(@dispenser, html: {class: "form-horizontal"}) do |f| %>
+    <%= simple_form_for(@dispenser, html: {class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
-  <div class="new-woodbine-dispenser">
-    <div class="dispenser-header">
-      <%= f.input :name, label: "Dispenser Name", class: "disp-name-input" %>
-      <%= f.input :stock, clas: "disp-stock-input" %>
-    </div>
-    <%= f.input :description %>
-    <%= f.input :case %>
-    <%= f.input :weight %>
-    <%= f.input :image %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-</div>
-<% end %>
+  <div class="woodbine-product-new-header">
+    <%= f.input :name, label: "Dispenser Name" %>
+    <div class="woodbine-product-new-right">
+          <%= f.select :cat, options_for_select([['Lotion Hand Soaps'], ['Foam Soaps/Hand Sanitizers'], ['Industrial Waterless Hand Clenaer'], ['Industrial Waterless Liquid Hand Cleaner'], ['Industrial water-activated Hand Cleaner']]), prompt: 'Select a Category' %>
+        </div>
+      </div>
+
+      <div class="product-new-main-information">
+        <div class="product-upload-left">
+          <%= f.input :description, rows:8, cols:40, maxlength:400, label: "Enter Description", id: "description" %>
+        </div>
+        <div class="product-upload-right" style="display:inline-table;">
+          <%= f.label :Add_Dispenser_Image %>
+          <%= f.file_field :image %>
+          <br>
+          <%= f.input :stock %>
+          <%= f.input :case %>
+          <%= f.input :weight %>
+        </div>
+      </div>
+
+
+    <div class="actions" style="margin-bottom:100px;">
+      <%= f.button :submit %>
+    </div>
+    <% end %>
